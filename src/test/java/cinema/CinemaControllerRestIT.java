@@ -106,7 +106,6 @@ public class CinemaControllerRestIT {
 
         MovieDTO result = template.postForObject("/api/cinema/1/reserve", new CreateReservationCommand(5), MovieDTO.class);
 
-
         assertEquals(115, result.getFreeSpaces());
 
 
